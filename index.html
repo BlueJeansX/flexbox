@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .flex-container-parent {
+      /* display: flex; */
+      display: inline-flex;
+      background: rgb(241, 237, 237);
+      height: 800px;
+      /* width: 100%; */
+      justify-content: center;
+    }
+    .flex-container-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between
+    }
+    .red {
+      background: red;
+      width: 300px;
+      margin: 1px;
+      border-style: solid;
+    }
+    .green {
+      background: green;
+      width: 700px;
+      margin: 1px;
+      height: 200px;
+      border-style: solid;
+    }
+    .yellow {
+      background: yellow;
+      width: 700px;
+      margin: 1px;
+      height: 350px;
+      border-style: solid;
+    }
+    .blue {
+      background: blue;
+      width: 400px;
+      margin: 1px;
+      height: 500px;
+      border-style: solid;
+    }
+  </style>
+</head>
+<body style="background-color: grey;">
+  <div class="flex-container-parent">
+    <div class="red"></div>
+    <div class="flex-container-child">
+      <div class="green"></div>
+      <div class="yellow"></div>
+    </div>
+    <div class="blue"></div>
+  </div>
+</body>
+</html>
